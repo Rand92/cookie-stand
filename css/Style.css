@@ -58,3 +58,10 @@ h3 {
       color:rgba(168, 63, 14, 0.521);
       
   }
+   td {
+    border: 1px solid black;
+  }
+  /* table, th {
+    border: 1px solid black;
+  } */
+  /* th{ border: auto;} */
