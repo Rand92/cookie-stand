@@ -4,20 +4,27 @@ header {
  background-color: burlywood ;
  width: 660px;
  color: rgba(77, 14, 14, 0.822);
-}
+width: 50%;}
 
-li {margin-bottom: 20px; 
+ul {
+  margin-right: 70px;
+}
+li {
+  /* margin-bottom: 20px;  */
   display: inline;
 float: right ;
-margin-inline-end: 30px ;
+margin-inline-end: 40px ;
 vertical-align: middle;
 font-size: 20px;
+color: rgb(83, 39, 8);
 }
-
 
 head {background-color: burlywood ;}
 h1{color:rgb(172, 26, 26);
-    text-shadow: 3px 3px rgb(245, 134, 30);}
+    text-shadow: 3px 3px rgb(245, 134, 30);
+  float: right;
+margin-right: 8%;
+font-size: 300%;}
 h3 {
     opacity: 0.50;
   }
@@ -74,17 +81,22 @@ h3 {
     border: 1px solid black;
   }
  body{
-   background-color: bisque;
- }
+  background-image: url("star-background");}
+  /* background-repeat */
+  /* background-attachment: fixed; */
+ /* } */
  nav img {
    float: left;
+   display: grid;
+   margin-top: 20px;
  }
 
 table{
   border-style: inset;
 font-family: 'Times New Roman', Times, serif ;
 font-size: large;
-font-weight: bold;}
+font-weight: bold;
+/* empty-cells: hide;} */
 
  footer {
   padding: 20px;
