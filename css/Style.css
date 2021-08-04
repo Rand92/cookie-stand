@@ -1,37 +1,33 @@
-header {
+header {margin: 30px;
+  display: grid;
+  flex-wrap: column;
     font-size:30px;
  font-style:italic ;
  background-color: burlywood ;
- width: 660px;
  color: rgba(77, 14, 14, 0.822);
-width: 50%;}
-
-ul {
-  margin-right: 70px;
 }
+
 li {
-  /* margin-bottom: 20px;  */
   display: inline;
 float: right ;
 margin-inline-end: 40px ;
-vertical-align: middle;
 font-size: 20px;
 color: rgb(83, 39, 8);
 }
 
-head {background-color: burlywood ;}
-h1{color:rgb(172, 26, 26);
-    text-shadow: 3px 3px rgb(245, 134, 30);
-  float: right;
-margin-right: 8%;
-font-size: 300%;}
-h3 {
-    opacity: 0.50;
-  }
 
+head{
+  align-items: center;
+}
+h1 {color:rgb(172, 26, 26);
+    text-shadow: 3px 3px rgb(245, 134, 30);margin: 30px;
+font-size: 300%;
+
+}
   .container {
     position: relative;
     width: 50%;
+    margin: 30px;
   }
   
   .image {
@@ -71,39 +67,54 @@ h3 {
   }
   section { color: rgb(129, 51, 15);
     text-align: left;
-
   }
   h2 {
-      color:rgba(168, 63, 14, 0.521);
-      
+      color:rgb(77, 6, 6);
+    font-style: italic;
+    padding: 30px;
   }
+
    td {
     border: 1px solid black;
   }
- body{
-  background-image: url("star-background");}
-  /* background-repeat */
-  /* background-attachment: fixed; */
- /* } */
- nav img {
+
+ main { 
+   display: grid;
+   margin: 30px;
+  flex: column;
+  background-image: url("star-background.jpg");
+  background-color: burlywood ;
+  }
+  article{
+    border: black;
+    height: 40%;
+    max-width: 40%;
+    overflow: scroll;
+    margin: 30px;
+  }
+ /* nav img {
    float: left;
    display: grid;
-   margin-top: 20px;
- }
-
-table{
+   margin :30px
+ } */
+/* nav {
+  margin-bottom: 30px;
+  margin-left: 30px;
+} */
+table{ margin: 30px;
   border-style: inset;
 font-family: 'Times New Roman', Times, serif ;
 font-size: large;
 font-weight: bold;
 /* empty-cells: hide;} */
-
+}
  footer {
+   position: absolute;
   padding: 20px;
       clear: both;
       position: relative;
       height: 50px;
-      margin-top: -200px;
+      margin: 30px;
           background-color: #501208;
           color: white;
           text-align: center;
