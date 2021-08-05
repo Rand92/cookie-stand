@@ -9,12 +9,38 @@
     <h1>salmon Cookies Shop</h1>
 </head>
 <body>
-    <header> The simulated amounts of cookies purchased for each hour at each brach</header>
+    <main > 
+        <header> The simulated amounts of cookies purchased for each hour at each brach</header>
     
-    <section id="salmonCookies"></section>
-   
-    <p><a href="http://127.0.0.1:5500/index.html">Visit our home page!</a></p>
-    <script src="js/app.js"></script>
+        <section id="salmonCookies"></section>
+       
+        <p><a href="http://127.0.0.1:5500/index.html">Visit our home page!</a></p>
+        <script src="js/app.js"></script>
+
+        <form id="newCookieStand"style="width: 30%; margin:30px">
+            <fieldset style=" font-weight: 600;">
+              <legend style="font-size:larger;margin-bottom: 20px;">cookie stand new location:</legend>
+         
+              <label for="shopName">Branch Name </label>
+              <input name="" type="text" id="shopName">
+               <br />
+              <label for="minNum">Minimum Number of Customers:</label>
+              <input name="" type= "number" id="minNum">
+               <br />
+              <label for="maxNum">Maximum Number of Customers: </label>
+              <input name="" type= "number" id="maxNum">
+               <br />
+              <label for="avg">Average Number of Cookies/Hour: </label>
+              <input name="" type= "text" id="avg">
+               <br />
+              <button type="submit" style="margin-left: 15%;border-radius: 10%;font-family:cursive;">Submit</button>
+              <br />
+            </fieldset>
+          </form>
+    </main>
+       
+  
+    
 </body>
 
 </html>
