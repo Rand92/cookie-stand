@@ -6,7 +6,7 @@ const tableEl = document.createElement('table');
 secsalmonCookies.appendChild(tableEl);
 
 
-
+function total(){
 let tr1 = document.createElement('tr');
 tableEl.appendChild(tr1);
 
@@ -14,7 +14,8 @@ for (let i = 0; i < hours.length; i++) {
     let th1 = document.createElement('th');
     th1.textContent = hours[i];
     tr1.appendChild(th1);
-}
+}}
+total();
 
 let column= [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] ;
 
@@ -86,12 +87,12 @@ let Seattle = new Salmon('Seattle', 23, 65, 6.5);
 cookieForm.addEventListener('submit',submithandler);
 function submithandler(event){
   event.preventDefault();
-  let shopName = event.target.shopName.value;
+  let shopName1 = event.target.shopName.value;
   let minNum = event.target.minNum.value;
   let maxNum= event.target.maxNum.value;
   let Avg = event.target.avg.value;
 
-  let newLocation = new Salmon (shopName,minNum,maxNum,Avg);
+  let newLocation = new Salmon (shopName1,minNum,maxNum,Avg);
 newLocation.RandomNumOfCust(minNum,maxNum);
 newLocation.render();
 footer();
