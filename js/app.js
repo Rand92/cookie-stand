@@ -4,12 +4,13 @@ let hours = ['','6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm'
 let secsalmonCookies = document.getElementById('salmonCookies');
 const tableEl = document.createElement('table');
 secsalmonCookies.appendChild(tableEl);
-// new function
+
+
+
 let tr1 = document.createElement('tr');
 tableEl.appendChild(tr1);
 
 for (let i = 0; i < hours.length; i++) {
-
     let th1 = document.createElement('th');
     th1.textContent = hours[i];
     tr1.appendChild(th1);
@@ -79,3 +80,22 @@ let Seattle = new Salmon('Seattle', 23, 65, 6.5);
     Paris.render();
     Lima.render();
     footer();
+
+    let cookieForm = document.getElementById('newCookieStand');
+// console.log(cookieForm);
+cookieForm.addEventListener('submit',submithandler);
+function submithandler(event){
+  event.preventDefault();
+  let shopName = event.target.shopName.value;
+  let minNum = event.target.minNum.value;
+  let maxNum= event.target.maxNum.value;
+  let Avg = event.target.avg.value;
+
+  let newLocation = new Salmon (shopName,minNum,maxNum,Avg);
+newLocation.RandomNumOfCust(minNum,maxNum);
+newLocation.render();
+footer();
+console.log(newLocation);
+newCookieStand.reset();
+
+}
