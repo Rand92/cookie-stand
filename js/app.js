@@ -92,7 +92,7 @@ function submithandler(event){
   let maxNum= event.target.maxNum.value;
   let Avg = event.target.avg.value;
 
-  let newLocation = new Salmon (shopName1,minNum,maxNum,Avg);
+let newLocation = new Salmon (shopName1,minNum,maxNum,Avg);
 newLocation.RandomNumOfCust(minNum,maxNum);
 newLocation.render();
 footer();
